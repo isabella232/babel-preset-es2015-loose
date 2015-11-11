@@ -19,6 +19,6 @@ module.exports = {
     require("babel-plugin-transform-es2015-block-scoping"),
     require("babel-plugin-transform-es2015-typeof-symbol"),
     require("babel-plugin-transform-es2015-modules-commonjs", {loose: true}),
-    require("babel-plugin-transform-regenerator")
+    [require("babel-plugin-transform-regenerator"), {async: true, asyncGenerators: true}]
   ]
 };
